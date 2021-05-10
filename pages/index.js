@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import MainNav from '../components/navigation/main';
 
 export default function Home() {
@@ -11,7 +12,10 @@ export default function Home() {
 			<MainNav />
 			<main>
 				<h1 className="title">
-					test <a href="https://nextjs.org">Next.js!</a>
+					Read{' '}
+					<Link href="/blog/first-post">
+						<a>this page!</a>
+					</Link>
 				</h1>
 
 				<p className="description">
